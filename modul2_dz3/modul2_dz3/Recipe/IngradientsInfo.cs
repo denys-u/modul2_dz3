@@ -5,7 +5,7 @@ using System.Text;
 
 namespace modul2_dz3.Recipe
 {
-    public class IngradientsInfo
+    public class Info
     {
         public  Ingradients[] _calories;
         public void CaloriesInfo()

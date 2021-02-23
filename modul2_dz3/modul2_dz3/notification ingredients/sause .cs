@@ -7,10 +7,12 @@ namespace modul2_dz3.notification_ingredients
     public abstract class Sause
     {
         public string Name { get; set; }
+
         public Sause(string name)
         {
             Name = name;
         }
+
         public void Display()
         {
             Console.WriteLine($"Sause {Name}");
@@ -30,12 +32,14 @@ namespace modul2_dz3.notification_ingredients
         {
         }
     }
+
     public class Oil : Sause
     {
         public Oil(string name) : base(name)
         {
         }
     }
+
     public class Mustard : Sause
     {
         public Mustard(string name) : base(name)

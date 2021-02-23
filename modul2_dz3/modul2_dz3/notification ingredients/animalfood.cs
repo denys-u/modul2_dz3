@@ -7,10 +7,12 @@ namespace modul2_dz3.notification
     public abstract class Animalfood
     {
         public string Name { get; set; }
+
         protected Animalfood(string name)
         {
             Name = name;
         }
+
         public void Display()
         {
             Console.WriteLine($"Animalfood {Name}");
@@ -19,6 +21,8 @@ namespace modul2_dz3.notification
 
     public class Eggs : Animalfood
     {
+        internal int Calories;
+
         public Eggs(string name) : base(name)
         {
         }
